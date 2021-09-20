@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,900;1,600&family=Mulish:ital,wght@0,200;0,400;1,200&family=Roboto:wght@400;500&display=swap');
 
+
+/* container max-width  1520px */
+/* 
+  colors
+  #000
+  #767676
+  #fff
+*/
+/* font
+  logo: 120px
+  section-title: 35px / 150px background
+  sub-title: 15px
+  desc: 15px
+  h3: 18px
+*/
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
