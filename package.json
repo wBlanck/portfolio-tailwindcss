@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-tailwindcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "autoprefixer": "^10.3.4",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build-css": "tailwindcss build styles.css -o css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wBlanck/portfolio-tailwindcss.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wBlanck/portfolio-tailwindcss/issues"
+  },
+  "homepage": "https://github.com/wBlanck/portfolio-tailwindcss#readme"
+}
