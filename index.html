@@ -8,12 +8,14 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="font-monts text-base">
-  <section class="h-screen w-screen" id="home">
-    <nav class="max-w-screen-xl fixed left-2/4 transform -translate-x-2/4 flex justify-between w-full px-10 pt-5"> 
-      <div class="">
+  <section class="h-screen w-screen bg-hero bg-cover bg-top" id="home">
+    <nav class="bg-white layout fixed left-2/4 transform -translate-x-2/4 flex justify-between w-full px-5 py-4 border-b border-opacity-25 border-black lg:px-10 lg:pt-5"> 
+      <!-- logo -->
+      <a href="#" class="">
         <img class="max-w-70px" src="imgs/logo.png" alt="Site Logo">
-      </div>
-      <ul class="flex text-sm font-semibold">
+      </a>
+      <!-- desktop nav -->
+      <ul class="hidden text-sm font-semibold lg:flex">
         <li class="mr-8">
           <a href="" class="">Home</a>
         </li>
@@ -30,6 +32,12 @@
           <a href="" class="">Contact</a>
         </li>
       </ul>
+      <!-- hamburger menu-->
+      <div class="relative cursor-pointer flex flex-col justify-center lg:hidden">
+        <div class="bg-black w-7 h-0.5"></div>
+        <div class="bg-black w-7 h-0.5 mt-1.5"></div>
+        <div class="bg-black w-7 h-0.5 mt-1.5"></div>
+      </div>
     </nav>
   </section>
 </body>

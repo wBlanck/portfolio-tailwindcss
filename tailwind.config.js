@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundImage: {
+        'hero': 'url("../imgs/headerbg.jpg")'
+      },
       fontSize: {
         sm: ['15px', '30px']
       },
@@ -13,6 +16,11 @@ module.exports = {
       },
       maxWidth: {
         '70px': '70px'
+      },
+      colors: {
+        'black': '#000',
+        'gray':'#767676',
+        'white': '#fff'
       }
     },
   },
