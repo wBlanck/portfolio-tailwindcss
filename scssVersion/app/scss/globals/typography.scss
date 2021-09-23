@@ -4,7 +4,7 @@ body {
 	line-height: 30px;
 	font-size: rem(15);
 	letter-spacing: rem(0.5);
-	word-break: break-all;
+	word-break: break-word;
 }
 
 h1,
@@ -24,9 +24,24 @@ a:active {
 	font-size: rem(30);
 	text-transform: uppercase;
 	line-height: 1.4;
-
+	position: relative;
+	z-index: -1;
+	@include breakpoint('medium-2'){
+		font-size: rem(35);
+	}
 	span {
 		display: none;
+		@include breakpoint('medium-2'){
+			font-size: rem(150);
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			line-height: 0;
+			opacity: .1;
+			word-break: normal;
+			-webkit-user-select: none;
+    }
 	}
 }
 .section-subtitle {

@@ -3,21 +3,36 @@
 
 
 .about {
-
+  padding-block: rem(200);
   .container {
     display: flex;
     flex-direction: column;
     
+    @include breakpoint('medium-2'){
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__img-container {
     margin-bottom: rem(45);
+    display: flex;
+    align-items: center;
+   
+    @include breakpoint('medium-2'){
+      width: 40%;
+    }
   }
   &__img {
-   
+    
   }
   &__content {
-   
+
+    @include breakpoint('medium-2'){
+      flex-direction: row;
+      width: 60%;
+      padding-left: rem(80);
+    }
   }
   &__headings {
     margin-bottom: rem(40);
