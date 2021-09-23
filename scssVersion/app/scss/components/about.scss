@@ -1,0 +1,44 @@
+@use '../util' as *;
+
+
+
+.about {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  &__img-container {
+    margin-bottom: rem(45);
+  }
+  &__img {
+   
+  }
+  &__content {
+   
+  }
+  &__headings {
+    margin-bottom: rem(40);
+    h2 {
+      margin-bottom: rem(10);
+    }
+    h4 {
+      padding-bottom: rem(40);
+    }
+    border-bottom: 1px solid rgba(0,0,0,.1);
+  }
+  &__paragraph {
+    font-family: 'Mulish', sans-serif;
+    color: var(--clr-gray);
+    font-style: italic;
+    font-weight: 400;
+  }
+  &__paragraph + &__paragraph {
+    margin-top: rem(30);
+  }
+  button {
+    margin-top: rem(40);
+  }
+}

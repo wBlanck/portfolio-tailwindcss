@@ -1,0 +1,21 @@
+@use '../util' as *;
+
+.btn {
+  padding: rem(21) rem(51);
+  border-radius: 0;
+  cursor: pointer;
+  font-size: rem(15);
+  font-style: italic;
+  font-family: 'Mulish', sans-serif;
+  letter-spacing: rem(0.5);
+  background-color: var(--clr-black);
+  border: 2px solid var(--clr-black);
+  color: var(--clr-white);
+  transition: all .3s ease;
+
+  &:hover {
+    background-color: var(--clr-white);
+    border: 2px solid var(--clr-black);
+    color: var(--clr-black);
+  }
+}
