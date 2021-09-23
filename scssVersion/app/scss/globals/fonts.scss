@@ -1,3 +1,23 @@
+@use '../util' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,900;1,600&family=Mulish:ital,wght@0,200;0,400;1,200&family=Roboto:wght@400;500&display=swap');
+
 :root {
-	--font-body: Arial, sans-serif;
+	
+	--fs-xxl: calc((50 / 16) * 1rem); // 150px
+	--fs-xl: calc((120 / 16) * 1rem) // 120px
+	--fs-800: calc((35 / 16) * 1rem) // 35px
+	--fs-500: calc((18 / 16) * 1rem) // 18px;
+	--fs-400: calc((15 / 16) * 1rem) // 15px;
+	--fs-300: calc((13 / 16) * 1rem) // 13px;
+	--lh-400: calc((30 / 16) * 1rem) // 30px;
+	--lh-300: calc((25 / 16) * 1rem) // 25px;
+
+	@include breakpoint(large) {
+		--fs-xxl: calc((150 / 16) * 1rem); // 150px
+	}
+	
+}
+body {
+	font-family: 'Montserrat', sans-serif;
 }

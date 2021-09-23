@@ -1,5 +1,11 @@
 @use '../util' as *;
 
+body {
+	line-height: 30px;
+	font-size: rem(15);
+	letter-spacing: rem(0.5);
+}
+
 h1,
 h2,
 h3 {
