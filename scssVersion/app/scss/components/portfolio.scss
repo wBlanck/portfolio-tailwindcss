@@ -3,6 +3,7 @@
 
 .portfolio {
   background-color: #f8f9fa;
+  padding-block: rem(100);
 
   &__headings {
     display: flex;
@@ -18,5 +19,21 @@
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: rem(50);
+  }
+}
+
+.items {
+
+  .item{
+
+  }
+  &__text {
+    
+  }
+  &__title {
+
+  }
+  &__desc {
+
   }
 }
