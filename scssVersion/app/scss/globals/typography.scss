@@ -4,7 +4,7 @@ body {
 	line-height: 30px;
 	font-size: rem(15);
 	letter-spacing: rem(0.5);
-	word-break: break-word;
+	/* word-break: break-word; */
 }
 
 h1,
@@ -25,7 +25,7 @@ a:active {
 	text-transform: uppercase;
 	line-height: 1.4;
 	position: relative;
-	z-index: -1;
+
 	@include breakpoint('medium-2'){
 		font-size: rem(35);
 	}

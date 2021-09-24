@@ -1,0 +1,22 @@
+@use '../util' as *;
+
+
+.portfolio {
+  background-color: #f8f9fa;
+
+  &__headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  .list {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: rem(50);
+  }
+}

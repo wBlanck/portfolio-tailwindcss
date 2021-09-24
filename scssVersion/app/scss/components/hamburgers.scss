@@ -1,0 +1,50 @@
+@use '../util' as *;
+
+.hamburger {
+  position: relative;
+  cursor: pointer;
+
+
+  @include breakpoint('medium-2'){
+    display: none;
+  }
+  
+  span {
+    height: rem(2);
+    width: rem(30);
+    background-color: var(--clr-black);
+    display: block;
+
+    &:nth-child(1) {
+      margin-bottom: 5px;
+    }
+    &:nth-child(3) {
+      margin-top: 5px;
+    }
+  }
+}
+.hamburger-2 {
+  position: relative;
+  cursor: pointer;
+  display: none;
+
+  @include breakpoint('large'){
+    display: block;
+  }
+  span {
+    height: rem(3);
+    width: rem(30);
+    background-color: var(--clr-black);
+    display: block;
+    position: relative;
+    &:nth-child(1) {
+      margin-bottom: 5px;
+      width: rem(15);
+    }
+    &:nth-child(3) {
+      margin-top: 5px;
+      width: rem(15);
+      margin-left: auto;
+    }
+  }
+}

@@ -12,18 +12,29 @@
   background-color: var(--clr-white);
   border-bottom: 1px solid rgba(0,0,0,.2);
 
-  @include breakpoint('medium-2'){
-    background-color: transparent;
-    border: none;
-  }
-
-  &__list {
+  .list {
     display: none;
 
     @include breakpoint('medium-2'){
       display: flex;
     }
   }
+
+  @include breakpoint('medium-2'){
+    background-color: transparent;
+    border: none;
+  }
+
+  
+}
+.logo {
+  img {
+    max-width: rem(70);
+  }
+}
+
+.list {
+    
   &__item {
     
   }
@@ -33,11 +44,5 @@
   &__link {
     color: var(--clr-black);
     font-weight: 600;
-    
-  }
-}
-.logo {
-  img {
-    max-width: rem(70);
   }
 }
